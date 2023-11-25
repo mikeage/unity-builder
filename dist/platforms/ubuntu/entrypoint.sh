@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# Ensure machine ID is randomized
-dbus-uuidgen > /etc/machine-id && mkdir -p /var/lib/dbus/ && ln -sf /etc/machine-id /var/lib/dbus/machine-id
-
 #
 # Prepare Android SDK, if needed
 # We do this here to ensure it has root permissions
